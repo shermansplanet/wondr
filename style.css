@@ -1,0 +1,134 @@
+body {
+  background-color: #ddd;
+}
+
+:root {
+  --darkgrey: #555;
+}
+
+:focus {
+  outline: none;
+  background-color: #eee;
+  transition-duration: 0.5s;
+}
+
+button {
+  cursor: pointer;
+  transition-duration: 0.3s;
+}
+
+button.main {
+  color: white;
+  font-family: 'Lato', sans-serif;
+  font-size: 14px;
+  background: none;
+  border: none;
+  margin: 12px 4px;
+  padding: 8px 10px;
+  background-color: #ff9000;
+}
+
+button.main:hover, button.main:focus {
+  background-color: #ffb020;
+  transition-duration: 0.3s;
+}
+
+button.main:active {
+  background-color: #ffd040;
+  transition-duration: 0.3s;
+}
+
+.panel {
+  padding: 12px;
+  background-color: white;
+  font-family: 'Lato', sans-serif;
+  box-shadow: 0px 1px 4px rgba(0, 0, 0, 0.5);
+  margin: 12px;
+  transition-duration: 0.4s;
+  color: var(--darkgrey);
+  font-size: 14px;
+  max-width: 500px;
+}
+
+.panel:hover{
+  box-shadow: 0px 3px 16px rgba(0, 0, 0, 0.5);
+  transition-duration: 0.4s;
+}
+
+input, textarea {
+  font-family: 'Lato', sans-serif;
+  font-size: 14px;
+  border: none;
+  border-bottom: 1px solid #888;
+  color: var(--darkgrey);
+  padding: 4px;
+  margin: 4px;
+  display: block;
+  width: 90%;
+}
+
+h1 {
+  font-size: 18px;
+  margin: 2px 0px;
+}
+
+textarea {
+  resize: none;
+  font-size: 12px;
+  height: 14px;
+}
+
+select {
+  font-family: 'Lato', sans-serif;
+  font-size: 14px;
+  border: none;
+  background-color: transparent;
+  margin: 4px 0px;
+  color: var(--darkgrey);
+}
+
+.dots {
+  display: inline-block;
+  margin: 0px 8px;
+  padding: 0px 0px 4px 4px;
+  border-radius: 20px;
+  font-size: 20px;
+  height: 22px;
+  line-height: 20px;
+}
+
+.slidercontainer{
+  background-color: var(--darkgrey);
+  height: 1px;
+  border: 10px solid white;
+  margin-bottom: 20px;
+  position: relative;
+}
+
+.slider{
+  height: 20px;
+  border-radius: 10px;
+  float: left;
+  background-color: var(--darkgrey);
+  border: none;
+  transform: translate(-50%,-10px);
+  transition-duration: 0s;
+  position: relative;
+  color: #ddd;
+  text-align: center;
+  padding: 0px;
+  padding-bottom: 1px;
+}
+
+.sliderlabel {
+  position: absolute;
+  width: 20px;
+  text-align: center;
+  margin-left: -10px;
+  margin-top: 8px;
+}
+
+input[type="number"] {
+  display: inline-block;
+  width: 30px;
+}

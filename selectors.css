@@ -1,0 +1,28 @@
+button.empty, button.full{
+  width: 16px;
+  height: 16px;
+  border-radius: 5px;
+  border: 1px solid #555;
+  margin: 8px;
+}
+
+button.full{
+  background-color: #555;
+}
+
+button.round{
+  border-radius: 8px;
+  padding: 0px;
+  line-height: 8px;
+  border: none;
+  background-color: #ddd;
+  color: #555;
+}
+
+button.round:focus{
+  border: 1px solid #aaa;
+}
+
+button.radio{
+  border-radius: 50%;
+}
